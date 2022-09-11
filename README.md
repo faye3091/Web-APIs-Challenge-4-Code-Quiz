@@ -42,8 +42,10 @@ CSS
 JavaScript
 ```
 
-## Resources
-
 ## Link to deployed application
 
+https://faye3091.github.io/Web-APIs-Challenge-4-Code-Quiz/
+
 ## Reposotory Link
+
+https://github.com/faye3091/Web-APIs-Challenge-4-Code-Quiz
