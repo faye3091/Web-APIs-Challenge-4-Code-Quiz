@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <!--To view scores-->
+      <div class="topview">
+        <!--button to click the view-score-->
+        <button id="view-scores">View High Scores!</button>
+      </div>
+      <div class="toptimer">
+        <p id="countdown">Time: 75s</p>
+        <!--Shows the timer left-->
+      </div>
+    </header>
+    <!--this is where the I'll put the quiz questions-->
+    <main id="container">
+      <div class="middle">
+        <h1>
+          Welcome to the Coding <br />
+          Quiz Challenge!
+        </h1>
+        <p class="content">
+          Try to answer the following javascript code questions within the time
+          limit. <br />
+          Keep in mind that incorrect answers will penalize your score/time by
+          ten seconds!
+        </p>
+        <!--Start button-->
+        <div class="start">
+          <button id="start-quiz">Start Quiz</button>
+        </div>
+      </div>
+      <!--Lists of questions-->
+      <section id="questions">
+        <div class="quiz">
+          <h2 id="quizes">Commonly used data types do NOT include:</h2>
+          <ul class="choices">
+            <li class="list">
+              <button id="answer1" value="0" class="ansBtn">Answer1</button>
+            </li>
+            <li class="list">
+              <button id="answer2" value="1" class="ansBtn">Answer2</button>
+            </li>
+            <li class="list">
+              <button id="answer3" value="2" class="ansBtn">Answer3</button>
+            </li>
+            <li class="list">
+              <button id="answer4" value="3" class="ansBtn">Answer4</button>
+            </li>
+          </ul>
+          <div id="result">
+            <!-- The result will be shown in here either Correct or Wrong-->
+          </div>
+        </div>
+      </section>
+      <!--The final score will be shown after finishing the quiz-->
+      <section id="final">
+        <h2>All done!</h2>
+        <p>
+          "Your final score is: "
+          <span id="score">0</span>
+        </p>
+        <!--This will allow you to enter your initials to store the score-->
+        <p>
+          "Enter initials: "
+          <span class="user">
+            <input placeholder="intials" id="initials" />
+          </span>
+          <!--button to submit the score-->
+          <button id="submit-score" class="submitbtn">Submit</button>
+        </p>
+      </section>
+      <section id="highscores">
+        <h2>High Scores</h2>
+        <!--Scores will be shown here once there is saved scores-->
+        <ol id="score-list">
+          <!--the lists of saved scores-->
+          <!-- <li></li> -->
+        </ol>
+        <!--buttons to go back into the starting game or to clear the scores-->
+        <button id="goback">Go back</button>
+        <button id="clearscores">Clear scores</button>
+      </section>
+    </main>
+
+    <footer>
+      <!--Photo credits-->
+      <span>
+        Photo by
+        <a
+          href="https://www.vecteezy.com/photo/5390305-lavender-flower-background"
+          >tiratus717052</a
+        >
+        on
+        <a href="https://www.vecteezy.com/">Vecteezy</a>
+      </span>
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

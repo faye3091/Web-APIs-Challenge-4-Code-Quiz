@@ -1,0 +1,194 @@
+:root {
+  --purple: rgb(104, 72, 117);
+  --dark: rgb(68, 19, 68);
+  --light: rgb(204, 173, 204);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* sets the background image and color */
+body {
+  color: var(--purple);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.745),
+      rgba(255, 255, 255, 0.578),
+      rgba(255, 255, 255, 0.278),
+      rgba(255, 255, 255, 0)
+    ),
+    url("./purple3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  line-height: 1.5;
+  /*This is to set footer on the bottom*/
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* To make sure that the Highscores and the timer is space-between */
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+/* Styled the button View High Scores */
+#view-scores {
+  font-size: large;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-color: var(--purple);
+  background-color: var(--light);
+}
+
+/* Style the h1 */
+h1 {
+  font-style: italic;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+#container {
+  padding: 40px;
+  flex: 1 0 auto;
+}
+
+/* Made sure the content is in the centered in the page */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0px 50px;
+  margin: 20px 30px;
+  justify-content: center;
+}
+
+/* made sure the button Start is centered */
+.start {
+  display: flex;
+  justify-content: center;
+}
+
+/* styled the button Start Quiz */
+#start-quiz {
+  font-size: larger;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-color: var(--purple);
+  background-color: var(--light);
+}
+
+/* Made sure that the questions, highscores, the score, and the results is centered  */
+#questions,
+#final,
+#highscores,
+#result {
+  display: none;
+  text-align: center;
+  justify-content: center;
+}
+
+/* styled the list of answers */
+#answer1,
+#answer2,
+#answer3,
+#answer4 {
+  font-size: 20px;
+  padding: 0.4rem;
+  border-radius: 10px;
+  border-color: var(--purple);
+  background-color: var(--light);
+}
+
+/* made sure there is not bullets in the style */
+.choices {
+  list-style: none;
+}
+
+/* made sure the list of choices are spaced out */
+li {
+  line-height: 50px;
+}
+/* styled the results(Correct or Wrong */
+#result {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+/* styled the footer so we can see the photo credits */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: white;
+  margin-bottom: 0;
+  flex-shrink: 0;
+  background-color: var(--purple);
+}
+
+/* made sure the a href is readable */
+a {
+  color: var(--light);
+}
+
+/* this is to make sure the footer is all the way at the bottom of the page */
+html,
+body {
+  height: 100%;
+}
+
+/* This will change the appearance of the page once the required screens are set */
+
+/* Mobile screen */
+@media (max-width: 480px) {
+  body {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.745),
+        rgba(255, 255, 255, 0.115)
+      ),
+      url("./purple1.jpg");
+    min-width: 215px;
+  }
+  .top {
+    margin: 0;
+  }
+  #container {
+    padding: 0;
+  }
+  h1 {
+    padding: 0px;
+  }
+  .content {
+    padding: 10px;
+  }
+}
+
+/* Tablet screen */
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.745),
+        rgba(255, 255, 255, 0.578),
+        rgba(255, 255, 255, 0.278),
+        rgba(255, 255, 255, 0)
+      ),
+      url("./purple2.jpg");
+    min-width: 215px;
+  }
+}
