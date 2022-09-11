@@ -36,7 +36,7 @@ The following animation demonstrates the application functionality:
 
 ## Screenshot of the completed Webpage
 
-![Code quiz website screenshot](.\assets\website.png)
+![Code quiz website screenshot](./assets/website.png)
 
 ## Technologies used
 
